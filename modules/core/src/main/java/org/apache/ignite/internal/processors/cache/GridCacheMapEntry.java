@@ -4259,6 +4259,7 @@ public abstract class GridCacheMapEntry extends GridMetadataAwareAdapter impleme
                         expiryPlc.ttlUpdated(entry.key, entry.ver, null);
 
                         needUpdate = true;
+                        storeLoadedVal = entry.val;
                     }
                 }
             }
